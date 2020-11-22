@@ -103,7 +103,7 @@ module ValidatesLengthsFromDatabase
             :allow_blank => true,
             :attributes => [column],
             :maximum => column_limit,
-            :too_long => "is too long (maximum is %{count} bytes)"
+            :too_long => I18n.t('errors.messages.too_long_bytes')
           )
         end
 
